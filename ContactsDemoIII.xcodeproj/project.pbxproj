@@ -11,6 +11,11 @@
 		38BC420E286B7788007869BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BC420D286B7788007869BF /* ContentView.swift */; };
 		38BC4210286B7789007869BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38BC420F286B7789007869BF /* Assets.xcassets */; };
 		38BC4213286B7789007869BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38BC4212286B7789007869BF /* Preview Assets.xcassets */; };
+		38BC421B286B77DD007869BF /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BC421A286B77DD007869BF /* ContactModel.swift */; };
+		38BC421D286B77F3007869BF /* SpecificNumberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BC421C286B77F3007869BF /* SpecificNumberModel.swift */; };
+		38BC4220286B7821007869BF /* FetchSpecificContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BC421F286B7821007869BF /* FetchSpecificContacts.swift */; };
+		38BC4223286B7850007869BF /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BC4222286B7850007869BF /* TabBarView.swift */; };
+		38BC4225286B7886007869BF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BC4224286B7886007869BF /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		38BC420D286B7788007869BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		38BC420F286B7789007869BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38BC4212286B7789007869BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		38BC421A286B77DD007869BF /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
+		38BC421C286B77F3007869BF /* SpecificNumberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificNumberModel.swift; sourceTree = "<group>"; };
+		38BC421F286B7821007869BF /* FetchSpecificContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchSpecificContacts.swift; sourceTree = "<group>"; };
+		38BC4222286B7850007869BF /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		38BC4224286B7886007869BF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,10 @@
 		38BC420A286B7788007869BF /* ContactsDemoIII */ = {
 			isa = PBXGroup;
 			children = (
+				38BC4221286B7838007869BF /* View */,
+				38BC421E286B7809007869BF /* ViewModel */,
+				38BC4219286B77C8007869BF /* Model */,
 				38BC420B286B7788007869BF /* ContactsDemoIIIApp.swift */,
-				38BC420D286B7788007869BF /* ContentView.swift */,
 				38BC420F286B7789007869BF /* Assets.xcassets */,
 				38BC4211286B7789007869BF /* Preview Content */,
 			);
@@ -65,6 +77,33 @@
 				38BC4212286B7789007869BF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		38BC4219286B77C8007869BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				38BC421A286B77DD007869BF /* ContactModel.swift */,
+				38BC421C286B77F3007869BF /* SpecificNumberModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		38BC421E286B7809007869BF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				38BC421F286B7821007869BF /* FetchSpecificContacts.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		38BC4221286B7838007869BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				38BC420D286B7788007869BF /* ContentView.swift */,
+				38BC4222286B7850007869BF /* TabBarView.swift */,
+				38BC4224286B7886007869BF /* HomeView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38BC421D286B77F3007869BF /* SpecificNumberModel.swift in Sources */,
+				38BC4225286B7886007869BF /* HomeView.swift in Sources */,
 				38BC420E286B7788007869BF /* ContentView.swift in Sources */,
 				38BC420C286B7788007869BF /* ContactsDemoIIIApp.swift in Sources */,
+				38BC4220286B7821007869BF /* FetchSpecificContacts.swift in Sources */,
+				38BC4223286B7850007869BF /* TabBarView.swift in Sources */,
+				38BC421B286B77DD007869BF /* ContactModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +314,7 @@
 				DEVELOPMENT_TEAM = KJWTP4JLL7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSContactsUsageDescription = "Reason for accessing contacts";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +344,7 @@
 				DEVELOPMENT_TEAM = KJWTP4JLL7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSContactsUsageDescription = "Reason for accessing contacts";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
